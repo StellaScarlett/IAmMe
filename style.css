@@ -149,122 +149,40 @@ nav{
 
 /*        SOCIAL MEDIA BTNS*/
 
-.fa {
-  padding: 22px;
-  font-size: 30px;
-  width: 20px;
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
   text-align: center;
-  text-decoration: none;
-  align-items: center; 
-  margin: 2px 4px;
-  border-radius: 50%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
+  padding: 16px;
+  transition: all 0.3s ease;
   color: white;
+  font-size: 20px;
 }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
 }
 
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
+.instagram {
   background: #125688;
   color: white;
 }
 
-#social #container {
-  text-align: center;
+.twitter {
+  background: #55ACEE;
+  color: white;
 }
 
-#social #container ul {
-  float: left;
-}
-
-#social #container ul li {
-  float: left;
-  padding-left: 10px;
-  list-style-type: none;
-}
-
-/*        BLINKING HEADER*/
-
-<!--
-/* @group Blink */
-.blink {
-	-webkit-animation: blink .75s linear infinite;
-	-moz-animation: blink .75s linear infinite;
-	-ms-animation: blink .75s linear infinite;
-	-o-animation: blink .75s linear infinite;
-	 animation: blink .75s linear infinite;
-}
-@-webkit-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@-moz-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@-ms-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@-o-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-/* @end */
--->
-
-/*        NEXT BUTTON*/
-
-.button {
-    background-color: #4B88A2;
-    border: none;
-    font-weight: 50;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 500px;
-    right: 120px;
-    
-}
-
-.button:hover {
-    background-color: #252627;
-}
 
 img {
     height: 351px;
@@ -427,14 +345,6 @@ div.container {
 .container {
     position: relative;
     display: none;
-}
-
-/* Centered text */
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 /* Closable button inside the image */
